@@ -177,12 +177,14 @@ program define mold_init
  
   file write start `"disp = ("-" * 10 + "Git information" + "-" * 10)"' _n
   file write start `"if "\$GIT" == "1" {"' _n
-  file write start _skip(2) `"disp "* git status ---- ""' _n
-  file write start _skip(2) `"shell git status"' _n
-  file write start _skip(2) `"disp "* git branches ---- ""' _n
-  file write start _skip(2) `"shell git branch"' _n
-  file write start _skip(2) `"disp "* git log ---- ""' _n
-  file write start _skip(2) `"shell git log --oneline --graph"' _n
+  file write start _skip(2) "quietly {" _n
+  file write start _skip(4) `"noisily disp "* git status ---- ""' _n
+  file write start _skip(4) `"noisily shell git status"' _n
+  file write start _skip(4) `"noisily disp "* git branches ---- ""' _n
+  file write start _skip(4) `"noisily shell git branch"' _n
+  file write start _skip(4) `"noisily disp "* git log ---- ""' _n
+  file write start _skip(4) `"noisily shell git log --oneline --graph"' _n
+  file write start _skip(2) "}" _n
   file write start "}" _n
 
   file close start
@@ -220,7 +222,7 @@ program define mold_init
   file write template "clear all" _n
   file write template _n(2)
   file write template "log using \`log_name'.log, replace text" _n
-  file wriet template _n(2)
+  file write template _n(2)
   file write template "global CURRENT_DO_PATH \`dopath'" _n
   file write template _n(2)
   file write template "version \$STATA_VERSION" _n
