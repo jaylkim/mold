@@ -200,7 +200,7 @@ program define mold_init
 
   // Create a default template file
 
-  mata: st_local("temppath", pathjoin("`projpath'", "_template.do")
+  mata: st_local("temppath", pathjoin("`projpath'", "_template.do"))
 
   qui file open template using "`temppath'", write replace
 
