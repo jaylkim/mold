@@ -50,26 +50,27 @@ You can check the list of them by running {cmd:macro} {cmd:list}.
 {title:Options}
 
 {p 8 8}
-{break}    - {cmd:parent}: Under which directory you want to create your project?
+{break}    - {cmd:parent(str)}: Under which directory you want to create your project?
 If not provided, the current working directory is assumed.
 
 {p 8 8}
-{break}    - {cmdab:proj:ect} : Project title 
+{break}    - {cmdab:proj:ect(str)} : Project title 
 
 {p 8 8}
-{break}    - {cmdab:aut:hor} : Author name 
+{break}    - {cmdab:aut:hor(str)} : Author name 
 
 {p 8 8}
-{break}    - {cmdab:d:epends} : Any dependencies other than the base commands 
+{break}    - {cmdab:d:epends(namelist)} : Any dependencies other than the base commands 
 
 {p 8 8}
-{break}    - {cmdab:stata:ver} : Stata version on which your project will be run (default 15). 
+{break}    - {cmdab:stata:ver(int)} : Stata version on which your project will be run (default 15). 
 
 {p 8 8}
 {break}    - {cmd:git} : Initialize a git repository
 
 {p 8 8}
-{break}    - {cmdab:r:path} : A path to the Rscript command on your computer.
+{break}    - {cmdab:r:path(str)} : A path to the Rscript command on your computer.
+
 
 
 

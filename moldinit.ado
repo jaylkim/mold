@@ -49,26 +49,26 @@ Options
 -------
 
 {p 8 8}
-- {cmd:parent}: Under which directory you want to create your project?
+- {cmd:parent(str)}: Under which directory you want to create your project?
 If not provided, the current working directory is assumed.
 
 {p 8 8}
-- {cmdab:proj:ect} : Project title 
+- {cmdab:proj:ect(str)} : Project title 
 
 {p 8 8}
-- {cmdab:aut:hor} : Author name 
+- {cmdab:aut:hor(str)} : Author name 
 
 {p 8 8}
-- {cmdab:d:epends} : Any dependencies other than the base commands 
+- {cmdab:d:epends(namelist)} : Any dependencies other than the base commands 
 
 {p 8 8}
-- {cmdab:stata:ver} : Stata version on which your project will be run (default 15). 
+- {cmdab:stata:ver(int)} : Stata version on which your project will be run (default 15). 
 
 {p 8 8}
 - {cmd:git} : Initialize a git repository
 
 {p 8 8}
-- {cmdab:r:path} : A path to the Rscript command on your computer.
+- {cmdab:r:path(str)} : A path to the Rscript command on your computer.
 
 
 
