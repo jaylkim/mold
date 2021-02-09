@@ -71,6 +71,7 @@ If not provided, the current working directory is assumed.
 - {cmdab:r:path} : A path to the Rscript command on your computer.
 
 
+
 Author
 ------
 
@@ -196,6 +197,34 @@ program define mold_init
 
 
   disp as txt "`projpath' created. Set as a working directory"
+
+  // Create a default template file
+
+  mata: st_local("temppath", pathjoin("`projpath'", "_template.do")
+
+  qui file open template using "`temppath'", write replace
+
+  file write template "* Any line that starts with * will be ignored." _n
+  file write template "* You may edit any lines that you want to include "
+  file write template "in your do file." _n
+  file write template "* You can use any macros on memory in your template." _n
+  file write template "* Macros in this template will be replaced by their "
+  file write template "values." _n
+  file write template "* Once you create a project with mold init, "
+  file write template "some global macros you can use will be defined." _n
+  file write template "* You can check them by running 'macro list'." _n
+  file write template "* A local macro \`log_name' will be "
+  file write template "defined by mold init. So you can use them " 
+  file write template "in this template." _n
+  file write template _n(3)
+  file write template "clear all" _n
+  file write template _n(2)
+  file write template "log using \`log_name'.log, replace text" _n
+  file write template _n(2)
+  file write template "version \$STATA_VERSION" _n
+
+  file close template
+
 
   // Make directories required
   // .              // Project dir
