@@ -13,7 +13,6 @@ github install jaylkim/mold
 
 ```
 
-You can download the package with the `net` command. 
 
 
 ## Recommended workflow
