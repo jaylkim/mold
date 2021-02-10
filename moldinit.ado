@@ -100,7 +100,7 @@ _This help file was created by the_ __markdoc__ _package written by Haghish_
 
 
 
-program define mold_init
+program define moldinit
 
   syntax anything(name=proj_folder id="Project folder name") ///
     [,                      ///

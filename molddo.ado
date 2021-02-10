@@ -66,7 +66,7 @@ Copyright (c) 2021 Jongyeon Kim
 ***/
 
 
-program define mold_do
+program define molddo
 
   syntax anything(name=filename id="Do-file name") ///
   [,                ///

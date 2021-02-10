@@ -96,7 +96,7 @@ _This help file was created by the_ __markdoc__ _package written by Haghish_
 
 
 
-program define use_r
+program define moldr 
 
   syntax , DOpath(str)
   
