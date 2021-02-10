@@ -81,7 +81,7 @@ program define mold
     moldinit "`2'", ///
       parent("`parent'") ///
       project("`project'") ///
-      authtor("`author'") ///
+      author("`author'") ///
       depends("`depends'") ///
       stataver(`stataver') ///
       `git' ///
