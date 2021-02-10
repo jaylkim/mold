@@ -1,0 +1,15 @@
+v 0.0.0.9000
+d mold. Creating a Structured Project with a Template
+d {bf:Jay (Jongyeon) Kim}
+d
+d Distribution-Date: 20210210
+d
+d Bug report: https://github.com/jaylkim/mold/issues
+f mold.ado
+f moldinit.ado
+f molddo.ado
+f moldr.ado
+f mold.sthlp
+f moldinit.sthlp
+f molddo.sthlp
+f moldr.sthlp

@@ -1,0 +1,5 @@
+v 0.0.0.9000
+d Creating a structured project with a template
+d Jay (Jongyeon) Kim
+
+p mold Create a structured project with a template
