@@ -93,7 +93,7 @@ program define mold
     molddo "`2'", ///
       project("`project'") ///
       title("`title'") ///
-      authtor("`author'") ///
+      author("`author'") ///
       depends("`depends'") ///
       stataver(`stataver') ///
       
