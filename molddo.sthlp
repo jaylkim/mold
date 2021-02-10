@@ -24,9 +24,6 @@ This command is designed to create a do-file with a pre-specified template.
 
 {title:Options}
 
-{p 8 8}
-{break}    - {cmd:parent(str)}: Under which directory you want to create your project?
-If not provided, the current working directory is assumed.
 
 {p 8 8}
 {break}    - {cmdab:proj:ect(str)} : Project title 

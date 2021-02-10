@@ -24,9 +24,6 @@ Syntax
 Options
 -------
 
-{p 8 8}
-- {cmd:parent(str)}: Under which directory you want to create your project?
-If not provided, the current working directory is assumed.
 
 {p 8 8}
 - {cmdab:proj:ect(str)} : Project title 
