@@ -78,7 +78,7 @@ program define mold
 
   if "`1'" == "init" {
     
-    moldinit "`2'", ///
+    moldinit `2', ///
       parent("`parent'") ///
       project("`project'") ///
       author("`author'") ///
@@ -90,7 +90,7 @@ program define mold
   }
   else if "`1'" == "do" {
     
-    molddo "`2'", ///
+    molddo `2', ///
       project("`project'") ///
       title("`title'") ///
       author("`author'") ///
