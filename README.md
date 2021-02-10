@@ -8,7 +8,8 @@
 ## Installation
 
 ```
-net install mold, from(https://github.com/jaylkim/mold)
+net install github, from("https://haghish.github.io/github/")
+github install jaylkim/mold
 
 ```
 
