@@ -63,7 +63,7 @@ so you will not have to specify them by yourself.
 
 {p 8 8}
 {break}    - {cmdab:do:path(str)}: The path to the currently running do file. 
-It will be retrieved from .
+It will be retrieved from $CURRENT_DO_PATH.
 
 
 
