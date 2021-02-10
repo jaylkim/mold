@@ -64,6 +64,13 @@ You can change this template by editing `_template.do` in your project folder.
 You might want to add a line for a file path to the data you often use.
 
 
+After a short break, you want to restart your work.
+Then, you just run the `_start_proj_name.do`.
+It will set the project folder as the working directory,
+and restore the meta data of your project.
+It also displays some git information.
+
+
 ## Working with R
 
 You might want to use R between Stata code.
