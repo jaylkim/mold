@@ -84,7 +84,7 @@ program define mold
       author("`author'") ///
       depends("`depends'") ///
       stataver(`stataver') ///
-      `git' ///
+      "`git'" ///
       rpath("`rpath'")
 
   }
