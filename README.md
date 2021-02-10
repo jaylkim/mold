@@ -10,7 +10,6 @@
 ```
 net install github, from("https://haghish.github.io/github/")
 github install jaylkim/mold
-
 ```
 
 
@@ -111,6 +110,7 @@ mold r, dopath("$CURRENT_DO_PATH")
 
 This code will create a png file in `output/figures` drawn by `ggplot2`.
 The global macro `$CURRENT_DO_PATH` will be added by the `mold do` command.
+The name `data` is reserved for Stata dataset that will be loaded by R.
 
 This command does the following:
 
